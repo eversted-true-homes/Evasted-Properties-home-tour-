@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore homes and arrange property tours with Evasted Properties.">
+  <title>Evasted Properties | Home Tours</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Evasted Properties home">
+      <span class="brand-mark">E</span>
+      <span>EVASTED <small>PROPERTIES</small></span>
+    </a>
+    <nav><a href="#properties">Properties</a><a href="#virtual-tour">Virtual tour</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FIND YOUR PLACE</p>
+        <h1>Discover a place<br>to call <em>home.</em></h1>
+        <p>Explore selected properties and arrange your next home tour with Evasted Properties.</p>
+        <a class="primary-button" href="#properties">Explore properties</a>
+      </div>
+      <div class="hero-photo"><img src="images/exterior.jpg" alt="Exterior view of the supplied property photo"></div>
+    </section>
+
+    <section class="property-section" id="properties">
+      <div class="section-heading">
+        <div><p class="eyebrow">FEATURED LISTING</p><h2>Explore this property</h2></div>
+        <span class="country-pill">United States</span>
+      </div>
+      <article class="property-card">
+        <div class="property-visual">
+          <img src="images/exterior.jpg" alt="Exterior of the home">
+          <span class="visual-caption">MIRAMAR · FLORIDA</span>
+        </div>
+        <div class="property-info">
+          <div class="listing-top"><span class="status">PROPERTY LOCATION</span><span class="flag">🇺🇸 USA</span></div>
+          <h3>Miramar, Florida Property</h3>
+          <p class="address">12768 SW 49th Ct, Miramar, FL 33027, United States</p>
+          <div class="details">
+            <div><small>COUNTRY</small><strong>United States</strong></div>
+            <div><small>STATE</small><strong>Florida</strong></div>
+            <div><small>CITY</small><strong>Miramar</strong></div>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=12768+SW+49th+Ct%2C+Miramar%2C+FL+33027" target="_blank" rel="noopener">View location on Google Maps ↗</a>
+          <p class="disclaimer">Photos supplied for this website. Please confirm that they depict the property at this address and verify ownership, availability, and all listing details before publication.</p>
+        </div>
+      </article>
+    </section>
+
+
+    <section class="tour-section" id="virtual-tour" aria-labelledby="tour-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE AT YOUR PACE</p><h2 id="tour-title">Take a virtual tour</h2></div>
+        <span class="tour-count" id="tour-count">1 / 5</span>
+      </div>
+      <div class="tour-viewer">
+        <div class="tour-image-wrap">
+          <img id="tour-image" src="images/exterior.jpg" alt="Home exterior">
+          <span class="tour-label">PHOTO TOUR</span>
+        </div>
+        <div class="tour-details">
+          <p class="eyebrow" id="tour-step">STOP 1</p>
+          <h3 id="tour-room">Home exterior</h3>
+          <p id="tour-description">Begin outside and take a look at the property's exterior.</p>
+          <div class="tour-progress" aria-label="Tour progress"><span id="tour-progress-fill"></span></div>
+          <div class="tour-controls">
+            <button type="button" class="tour-button secondary" id="tour-prev" disabled>← Previous</button>
+            <button type="button" class="tour-button" id="tour-next">Start tour →</button>
+          </div>
+          <button type="button" class="tour-restart" id="tour-restart">Restart tour</button>
+        </div>
+      </div>
+      <p class="tour-note">This is a photo-based tour using the images supplied for this listing. It is not a live or 360° walkthrough.</p>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">INSIDE THE HOME</p><h2 id="gallery-title">Property photo gallery</h2></div></div>
+      <div class="gallery-grid">
+        <figure><img src="images/living-room.jpg" alt="Living room with tiled floor and ceiling fan"><figcaption>Living room</figcaption></figure>
+        <figure><img src="images/kitchen.jpg" alt="Kitchen with light cabinets and stainless steel appliances"><figcaption>Kitchen</figcaption></figure>
+        <figure><img src="images/bedroom.jpg" alt="Bedroom with carpet and built-in closet"><figcaption>Bedroom</figcaption></figure>
+        <figure><img src="images/bathroom.jpg" alt="Bathroom with bathtub, tiled walls, and toilet"><figcaption>Bathroom</figcaption></figure>
+        <figure><img src="images/exterior.jpg" alt="Exterior view of the home"><figcaption>Home exterior</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="about" id="about"><p class="eyebrow">A SIMPLER WAY TO SEARCH</p><h2>Your next move starts with a closer look.</h2><p>Browse property locations, learn more about each home, and get in touch to arrange a viewing.</p></section>
+  </main>
+
+  <footer id="contact"><div class="brand"><span class="brand-mark">E</span><span>EVASTED <small>PROPERTIES</small></span></div><p>Property discovery made simple.</p><small>© <span id="year"></span> Evasted Properties. All rights reserved.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
